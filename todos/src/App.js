@@ -31,7 +31,7 @@ const App = () =>
     return (
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>
+          <li className='todoitems' key={index}>
             {todo}&nbsp;
             <button onClick={() => removeTodo(todo)}>X</button>
           </li>
