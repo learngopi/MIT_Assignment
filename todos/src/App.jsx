@@ -1,13 +1,12 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
-
+import Navbar from './Navbar';
 
 const App = () =>
 { 
-
   const [todoText, setTodoText] = useState('');
   const [todos, setTodos] = useState([]);
-
   const onChangeHandler = (event) => {
     setTodoText(event.target.value);
   }
@@ -42,6 +41,7 @@ const App = () =>
 
   return (
     <div >
+       <Navbar />
       <h1 className='App-header'>This is a todos application</h1>
         <form onSubmit={onSubmitHandler}>
         <input type="text" name="todoText" value={todoText} onChange={onChangeHandler}value={todoText} />
