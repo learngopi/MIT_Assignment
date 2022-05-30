@@ -1,13 +1,18 @@
 import './App.css';
-import './cart';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Shoppingcart from './Shoppingcart';
+
 
 const App = () => {
+
   return (
     <div className="App">
       <header className="App-header">
         Shopping cart application
       </header>
-      <div className='App-body'>Application in progress</div>
+      <div className='App-body'>
+            <Shoppingcart />
+      </div>
     </div>
   );
 }
